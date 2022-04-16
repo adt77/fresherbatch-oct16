@@ -1,0 +1,18 @@
+4. Create a list of numbers. Add them together. First double each number, then add 
+them up. Compute their average.
+
+
+
+def numList=[22,53,4,42,66,36]
+
+sumList=numList.sum()
+println ("Sum of the Element is : " + sumList)
+
+doubleList=numList.collect{it*2}
+println ("Double the list Element : " + doubleList)
+
+doubleSum=doubleList.sum()
+println ("Sum After Doubling the list : " + doubleSum)
+
+average=(sumList+doubleSum)/2
+println ("Average of both the List : " + average)
